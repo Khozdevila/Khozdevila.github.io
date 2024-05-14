@@ -1,0 +1,276 @@
+---
+layout: default_home
+---
+
+<!-- home.html -->
+  {%- assign hero_image_path = page.hero.image | prepend: 'assets/img/' -%}
+  
+  <div class="hero" style="background-image: url({{ hero_image_path }})">
+    <div class="hero-title"> {{ page.hero.title }}</div>
+    <div class="hero-tagline">{{ page.hero.tagline }}</div>
+  </div>
+ 
+  <div class="container">
+
+    <div class="mission" style="background-color: {{ page.mission.background-color }}">
+      <div class="mission-title">{{ page.mission.title }}</div>
+      <div class="mission-text">{{ page.mission.text }}</div>
+    </div>
+
+	<div class="problem">
+	  <div class="row">
+	    <div class="col-1 col-sm-1 col-md-6 col-lg-6 col-xl-6 align-middle problem-left ">
+		  <div class="problem-title">{{ page.problem.title }}</div>
+		  <div class="problem-text">{{ page.problem.text }}</div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-6 col-lg-6 col-xl-6 col problem-right">
+		  {%- assign problem_image_path = page.problem.image | prepend: 'assets/img/' -%}
+		  <img src="{{ problem_image_path }}" class="problem-image" alt="{{ page.problem.title }}"/>  
+		</div>
+	  </div>
+	</div>
+
+	<div class="oportunity">
+	  <div class="row">
+	    <div class="col-1 col-sm-1 col-md-6 col-lg-6 col-xl-6 col oportunity-left">
+		  {%- assign oportunity_image_path = page.oportunity.image | prepend: 'assets/img/' -%}
+		  <img src="{{ oportunity_image_path }}" class="oportunity-image" alt="{{ page.oportunity.title }}"/>  
+		</div>
+	    <div class="col-1 col-sm-1 col-md-6 col-lg-6 col-xl-6 align-middle oportunity-right ">
+		  <div class="oportunity-title">{{ page.oportunity.title }}</div>
+		  <div class="oportunity-text" >{{ page.oportunity.text }}</div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="approach">
+	  <div class="row">
+	    <div class="col-1 col-sm-1 col-md-6 col-lg-6 col-xl-6 align-middle approach-left ">
+		  <div class="approach-title">{{ page.approach.title }}</div>
+		  <div class="approach-text" >{{ page.approach.text }}</div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-6 col-lg-6 col-xl-6 col approach-right">
+		  {%- assign approach_image_path = page.approach.image | prepend: 'assets/img/' -%}
+		  <img src="{{ approach_image_path }}" class="approach-image" alt="{{ page.approach.title }}"/>  
+		</div>
+	  </div>
+	</div>
+
+	<div class="expertise">
+      <div class="row">
+	    <div class="col">
+		  <div class="expertise-main-title">{{ page.expertise.main_title }}</div>
+		  <div class="expertise-secondary-title">{{ page.expertise.secondary_title }}</div>
+		</div>
+	  </div>
+      <div class="row">
+	    <div class="col-1 col-sm-1 col-md-4 col-lg-4 card-hoverable expertise-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign expertise1_image = page.expertise.image1 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=expertise1_image alt="project thumbnail" -%}
+               <div class="card-body expertise-item-body">
+                 <p class="card-text"><span class="expertise-item-title">{{ page.expertise.title1 }}</span>&nbsp;{{ page.expertise.text1 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-4 col-lg-4 expertise-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign expertise2_image = page.expertise.image2 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=expertise2_image alt="project thumbnail" -%}
+               <div class="card-body expertise-item-body">
+                 <p class="card-text"><span class="expertise-item-title">{{ page.expertise.title2 }}</span>&nbsp;{{ page.expertise.text2 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-4 col-lg-4 expertise-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign expertise3_image = page.expertise.image3 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=expertise3_image alt="project thumbnail" -%}
+               <div class="card-body expertise-item-body">
+                 <p class="card-text"><span class="expertise-item-title">{{ page.expertise.title3 }}</span>&nbsp;{{ page.expertise.text3 }}</p>
+               </div>
+            </div>
+           </div>
+        </div>
+	  </div>
+
+      <div class="row" style="margin-top: 20px;">
+	    <div class="col-1 col-sm-1 col-md-4 col-lg-4 expertise-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign expertise4_image = page.expertise.image4 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=expertise4_image alt="project thumbnail" -%}
+               <div class="card-body expertise-item-body">
+                 <p class="card-text"><span class="expertise-item-title">{{ page.expertise.title4 }}</span>&nbsp;{{ page.expertise.text4 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-4 col-lg-4 expertise-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign expertise5_image = page.expertise.image5 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=expertise5_image alt="project thumbnail" -%}
+               <div class="card-body expertise-item-body">
+                 <p class="card-text"><span class="expertise-item-title">{{ page.expertise.title5 }}</span>&nbsp;{{ page.expertise.text5 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-4 col-lg-4 expertise-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign expertise6_image = page.expertise.image6 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=expertise6_image alt="project thumbnail" -%}
+               <div class="card-body expertise-item-body">
+                 <p class="card-text"><span class="expertise-item-title">{{ page.expertise.title6 }}</span>&nbsp;{{ page.expertise.text6 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="research">
+      <div class="row">
+	    <div class="col">
+		  <div class="research-main-title">{{ page.research.main_title }}</div>
+		</div>
+	  </div>
+      <div class="row">
+	    <div class="col-1 col-sm-1 col-md-3 col-lg-3 card-hoverable research-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign research1_image = page.research.image1 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=research1_image alt=page.research.title1 -%}
+               <div class="card-body research-item-body">
+                 <p class="card-text research-item-title">{{ page.research.title1 }}</p>
+                 <p class="card-text research-item-text">{{ page.research.text1 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>		
+	    <div class="col-1 col-sm-1 col-md-3 col-lg-3 card-hoverable research-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign research2_image = page.research.image2 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=research2_image alt=page.research.title1 -%}
+               <div class="card-body research-item-body">
+                 <p class="card-text research-item-title">{{ page.research.title2 }}</p>
+                 <p class="card-text research-item-text">{{ page.research.text2 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>		
+	    <div class="col-1 col-sm-1 col-md-3 col-lg-3 card-hoverable research-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign research3_image = page.research.image3 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=research3_image alt=page.research.title3 -%}
+               <div class="card-body research-item-body">
+                 <p class="card-text research-item-title">{{ page.research.title3 }}</p>
+                 <p class="card-text research-item-text">{{ page.research.text3 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	    <div class="col-1 col-sm-1 col-md-3 col-lg-3 card-hoverable research-item">
+          <div class="grid-sizer"></div>
+            <div class="grid-item">
+              <div class="card hoverable">
+               {%- assign research4_image = page.research.image4 | prepend: 'assets/img/' -%}
+               {%- include figure.html path=research4_image alt=page.research.title4 -%}
+               <div class="card-body research-item-body">
+                 <p class="card-text research-item-title">{{ page.research.title4 }}</p>
+                 <p class="card-text research-item-text">{{ page.research.text4 }}</p>
+               </div>
+            </div>
+           </div>
+		</div>
+	  </div>
+    </div>
+
+    <div class="join-us" style="background-color: {{ page.join_us.background-color }}">
+      <div class="join-us-title">{{ page.join_us.title }}</div>
+      <div class="join-us-text">{{ page.join_us.text }}</div>
+      <div class="join-us-button">
+	    <a href="{{ page.join_us.button_link }}" target="_self"><button type="button" class="btn btn-dark">{{ page.join_us.button_text }}</button></a>
+	  </div>
+    </div>
+
+    <div class="partners" style="background-color: {{ page.partners.background_color }}">
+      <div class="partners-title">{{ page.partners.title }}</div>
+      <div class="row partners-container">
+	    <div class="col">
+          {%- assign partner1_image = page.partners.image1 | prepend: 'assets/img/' -%}
+		  <div class="partner-mask" style="background-image: url({{ partner1_image }})"></div>			
+		</div>
+	    <div class="col">
+          {%- assign partner2_image = page.partners.image2 | prepend: 'assets/img/' -%}
+		  <div class="partner-mask" style="background-image: url({{ partner2_image }})"></div>
+		</div>
+	    <div class="col">
+          {%- assign partner3_image = page.partners.image3 | prepend: 'assets/img/' -%}
+		  <div class="partner-mask" style="background-image: url({{ partner3_image }})"></div>
+		</div>
+	    <div class="col">
+          {%- assign partner4_image = page.partners.image4 | prepend: 'assets/img/' -%}
+		  <div class="partner-mask" style="background-image: url({{ partner4_image }})"></div>			
+		</div>
+	    <div class="col">
+          {%- assign partner5_image = page.partners.image5 | prepend: 'assets/img/' -%}
+		  <div class="partner-mask" style="background-image: url({{ partner5_image }})"></div>
+		</div>
+	    <div class="col">
+		  {%- assign partner6_image = page.partners.image6 | prepend: 'assets/img/' -%}
+		  <div class="partner-mask" style="background-image: url({{ partner6_image }})"> </div>
+		</div>
+	  </div>
+    </div>
+	
+    <div class="funding">
+      <div class="funding-title">{{ page.funding.title }}</div>
+      <div class="funding-text">{{ page.funding.text }}</div>
+      <div class="row funding-container">
+	    <div class="col">
+          {%- assign funder1_image = page.funding.image1 | prepend: 'assets/img/' -%}
+		  <div class="funder-mask" style="background-image: url({{ funder1_image }})"></div>			
+		</div>
+	    <div class="col">
+          {%- assign funder2_image = page.funding.image2 | prepend: 'assets/img/' -%}
+		  <div class="funder-mask" style="background-image: url({{ funder2_image }})"></div>
+		</div>
+	    <div class="col">
+          {%- assign funder3_image = page.funding.image3 | prepend: 'assets/img/' -%}
+		  <div class="funder-mask" style="background-image: url({{ funder3_image }})"></div>
+		</div>
+	    <div class="col">
+          {%- assign funder4_image = page.funding.image4 | prepend: 'assets/img/' -%}
+		  <div class="funder-mask" style="background-image: url({{ funder4_image }})"></div>			
+		</div>
+	    <div class="col">
+          {%- assign funder5_image = page.funding.image5 | prepend: 'assets/img/' -%}
+		  <div class="funder-mask" style="background-image: url({{ funder5_image }})"></div>
+		</div>
+	    <div class="col">
+		  {%- assign funder6_image = page.funding.image6 | prepend: 'assets/img/' -%}
+		  <div class="funder-mask" style="background-image: url({{ funder6_image }})"> </div>
+		</div>
+	  </div>
+    </div>
+	
+	
