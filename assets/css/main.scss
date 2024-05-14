@@ -14,3 +14,230 @@ $max-content-width: {{ site.max_width }};
   "distill",
   "cv"
 ;
+
+
+.navbar-header-image-container {
+   max-width: 200px !important;
+}
+
+
+// //////////////////////////////////////////////////////////////////////////
+// HOME PAGE ////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////
+.home-container {  }
+
+.hero {
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+	margin-top: 0px;
+	background-size: cover;
+	align-content: end;
+	padding-left: 30px;
+}
+.hero-title {
+  width: 100%;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 3rem;
+}
+.hero-tagline {
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.mission {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 50px 50px 50px 50px;
+}
+.mission-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.mission-text {
+	color: #ffffff;
+	font-size: 1rem;
+}
+
+.problem, .approach {
+  padding: 50px 50px 50px 50px;
+}
+.problem-left, .approach-left {
+ align-content: center;
+}
+.problem-right, .approach-right {
+  align-content: center;
+}
+.problem-title, .approach-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 1.3rem;
+}
+.problem-text, .approach-text {
+	color: #000;
+	font-size: 1rem;
+}
+.problem-image, .approach-image {
+  width: 100%;
+  padding: 20px;
+  max-width: 380px;
+  max-height: 380px;
+}
+
+.oportunity {
+  padding: 50px 50px 50px 50px;
+}
+.oportunity-right {
+ align-content: center;
+}
+.oportunity-left {
+  align-content: center;
+}
+.oportunity-title {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+}
+.oportunity-text {
+	color: #000;
+	font-size: 1rem;
+}
+.oportunity-image {
+  width: 100%;
+  padding: 20px;
+  max-width: 380px;
+  max-height: 380px;
+}
+
+.expertise {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+.expertise-main-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.expertise-secondary-title {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.expertise-item-body, .research-item-body {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+.expertise-item-title {
+	font-weight: 600 !important;
+	font-size: 1rem;
+	color: #000 !important;
+}
+.expertise-item-text {
+	font-size: 1rem;
+}
+
+.research {
+  margin: 40px 0px 20px 0px;
+  text-align: center;
+}
+.research-main-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.research-item-title {
+	font-weight: bold !important;
+	font-size: 1rem;
+	color: #000 !important;
+}
+.research-item-text {
+	font-size: 1rem;
+}
+
+.join-us {
+	margin-top: 40px;
+	text-align: center;
+}
+.join-us-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 1.3rem;
+}
+.join-us-text {
+	color: #000;
+	font-size: 1rem;
+}
+.join-us-button {
+	margin-top: 20px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.partners {
+  margin: 40px 0px 20px 0px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.partners-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.partners-container {
+	padding-left: 7% !important;
+	padding-right: 7% !important;
+}
+.partner-mask {
+	width: 100px !important;
+	height: 100px !important;
+	max-width: 100px !important;
+	max-height: 100px !important;
+	border-radius: 50% !important;
+	background-position: center;
+	margin-bottom: 10px;
+	border: 5px solid white;
+}
+
+.funding {
+  margin: 40px 0px 20px 0px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.funding-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+.funding-text {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #000;
+}
+.funding-container {
+	padding-left: 7% !important;
+	padding-right: 7% !important;
+}
+.funder-mask {
+	width: 100px !important;
+	height: 100px !important;
+	max-width: 100px !important;
+	max-height: 100px !important;
+	background-position: center;
+	margin-bottom: 10px;
+	border: 5px solid white;
+}
